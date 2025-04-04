@@ -1,14 +1,14 @@
-import {Browserouter, Routes, Route, Link} from "react-router-dom";
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import Inicio from '../../Pages/Inicio/inicio'
 import LivrosDoados from '../../Pages/Livrosdoados/livrosdoados'
-import QueroDoar from '../../Pages/QueroDoar/querodoar'
+import QueroDoar from '../../Pages/Querodoar/querodoar'
 import LogoLivro from '../../assets/livro.png'
 import Lupa from '../../assets/lupa.png'
 import S from './header.module.scss'
 
 export default function Header(){
   return(
-    <Browserouter>
+    <BrowserRouter>
      <header className={S.header}>
       <section className={S.logoHeader}>
         <img src={LogoLivro} alt="Imagem livro aberto"/>
@@ -33,6 +33,6 @@ export default function Header(){
       <Route path='/livrosdoados' element={<LivrosDoados/>}/>
       <Route path='/querodoar' element={<QueroDoar/>}/>
     </Routes>
-    </Browserouter>
+    </BrowserRouter>
   )
 }

@@ -1,50 +1,92 @@
-
-
 .post{
-    background-image: url('../../assets/BANNER.png');
+    background-image: url('../../assets/banner.png');
      background-repeat: no-repeat;
-     height: 88vh;
-     background-size: contain;
+     height: 65vh;
+     background-size: cover;
      display: flex;
      align-items: center;
+     padding-left: 6%;
+
      h2{
-         color: white;
-         margin-left: 150px;
-         font-size: 26px;
-     }
+        color: white;
+        width: 28%;
+        font-size: 40px;
+    }
+}
+
+ .devoDoar { height: 80vh;
+    div{
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 35px;
+            margin-left: 60px;
+            color:  #005695;
+        }
+    }
+
  }
- .devoDoar{
-     height: 80vh;
-     div{
-         height: 15vh;
-         display: flex;
-         align-items: center;
-         h2{
-             font-size: 30px;
-             margin-left: 60px;
-             color:  #005695;
-         }
-     }
- }
- .boxCard{
-     height: 50vh;
-     display: flex;
-     align-items: center;
-     justify-content: space-evenly;
-     article{
-         background-color:#0157944D;
-         width: 20%;
-         height: 80%;
-         display: flex;
-         align-items: center;
-         flex-direction: column;
-         justify-content: space-evenly;
-         border-radius: 10px;
-         p{
-             text-align: center;
-             width: 70%;
-             font-size: 20px;
-         }
- 
-     }
- }
+
+
+ .boxCard  {
+    display: flex;
+    height: 65vh;
+    justify-content: space-evenly;
+
+         article{
+            background-color:#0157944D;
+            width: 20%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 10px;
+            p{
+                text-align: center;
+                width: 70%;
+                font-size: 20px;
+            }
+    
+        }
+    }
+        
+
+@media (max-width: 780px){
+    .post {
+        background-position: center;
+        height: 50vh;
+
+        h2 {
+            width: 90%;
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+    .devoDoar {
+        height: 120vh;
+
+        h2 {
+            font-size: 30px;
+            text-align: left;
+        }
+    }
+    .boxCard {
+        height: 110vh;
+        flex-direction: column;
+        align-items: center;
+
+        section {
+            width: 70%;
+            height: 25vh;
+
+            p {
+                font-size: 18px;
+            }
+            img {
+                width: 15%;
+            }
+        }
+    }
+}
