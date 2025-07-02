@@ -1,5 +1,5 @@
 import livroProtagonista from '../../assets/oprotagonista.png'
-import s from './livrosDoados.module.scss'
+import s from './livrosdoados.module.scss'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { data } from 'react-router-dom'
