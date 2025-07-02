@@ -1,7 +1,7 @@
 import Face from '../../assets/facebook.png'
 import Linkedin from '../../assets/linkedin.png'
 import Youtube from '../../assets/youtube.png'
-import Twitter from '../../assets/twitter.png'
+import Twitter from '../../assets/Twitter.png'
 import S from './footer.module.scss'
 import Insta from '../../assets/instagram.png'
 
@@ -26,4 +26,3 @@ export default function Footer() {
       </footer>
     );
   }
-  
